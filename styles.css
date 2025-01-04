@@ -1,0 +1,122 @@
+html {
+    text-align: center;
+    font-family: 'Comic Sans MS', sans-serif;
+}
+
+.calculator {
+    display: flex;
+    min-height: 95vh;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #fce4ec; /* Soft pink background */
+}
+
+#container {
+    background-color: #ffd1dc; /* Pastel pink */
+    border: 10px solid #f8bbd0; /* Lighter pink border */
+    border-radius: 30px; /* Rounded corners */
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(100px, auto) repeat(5, 80px);
+    gap: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); /* Soft shadow */
+    padding: 15px;
+}
+
+#display {
+    grid-column: 1 / -1;
+    background-color: #fff; /* White display */
+    border-radius: 20px; /* Rounded corners */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding: 15px;
+    font-size: 4.5em;
+    font-weight: bold;
+    color: #333; /* Dark gray text */
+    text-shadow: none;
+    margin: 0;
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); /* Inset shadow */
+}
+
+button {
+    margin: 2px;
+    border-radius: 20px; /* Rounded buttons */
+    border: none;
+    font-weight: bold;
+    font-size: 1.8em;
+    font-family: 'Comic Sans MS', sans-serif;
+    color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15); /* Button shadow */
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(0.95); /* Pressed effect */
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1); /* Slightly reduced shadow */
+}
+
+#zero {
+    grid-column: span 2;
+}
+
+.operator {
+    background-color: #f48fb1; /* Soft pink */
+}
+
+.operator:hover {
+    background-color: #f06292; /* Slightly darker pink */
+}
+
+.equals {
+    background-color: #d81b60; /* Bold pink */
+}
+
+.equals:hover {
+    background-color: #ad1457; /* Darker pink */
+}
+
+.operand {
+    background-color: #ce93d8; /* Pastel purple */
+}
+
+.operand:hover {
+    background-color: #ba68c8; /* Darker purple */
+}
+
+.decimal {
+    background-color: #ce93d8; /* Pastel purple */
+}
+
+.decimal:hover {
+    background-color: #ba68c8;
+}
+
+.clear {
+    background-color: #b2dfdb; /* Soft teal */
+}
+
+.clear:hover {
+    background-color: #80cbc4; /* Darker teal */
+}
+
+.sign {
+    background-color: #b2dfdb; /* Soft teal */
+}
+
+.sign:hover {
+    background-color: #80cbc4;
+}
+
+.percent {
+    background-color: #b2dfdb; /* Soft teal */
+}
+
+.percent:hover {
+    background-color: #80cbc4;
+}
